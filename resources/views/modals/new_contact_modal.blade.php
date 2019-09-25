@@ -35,6 +35,10 @@
                             <label class="control-label" for="birthday">Birthday</label>
                         </div>
                         <div class="form-group">
+                            <input name="city" id="address" class="form-control" value="{{$contact->address}}" type="text">
+                            <label class="control-label" for="address">Address</label>
+                        </div>
+                        <div class="form-group">
                             <input name="city" id="city" class="form-control" type="text">
                             <label class="control-label" for="city">City</label>
                         </div>
