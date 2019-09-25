@@ -20,9 +20,9 @@ A contact contains the following fields:
 
 ## Setup
 To run on your server please do the following
-Composer install
-Npm install
-Npm run prod
-Php artisan migrate
+- composer install
+- npm install
+- npm run prod
+- php artisan migrate
 
 Thank you for taking the time to look at this project
