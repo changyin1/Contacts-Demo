@@ -1,0 +1,85 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.header {
+  .top-row {
+    background-color: lightblue;
+  }
+  .nav-row {
+    background-color: #232323;
+    padding: 0.5rem 1rem;
+  }
+  .nav-tabs {
+    border: none;
+    margin-left: 3%;
+    width: 100%;
+    display: flex;
+  }
+  .nav-tab {
+    display: inline-block;
+    padding: 1rem 1rem;
+    color: gray;
+    border-bottom: 2px solid black;
+    &.active {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+    &:hover {
+      background-color: white;
+      color: black;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+form {
+  .form-group {
+    position: relative;
+    &.filled {
+      label {
+        transform: translateY(-125%);
+        color: grey;
+        font-size: .8em;
+      }
+    }
+  }
+  .form-control {
+    margin-bottom: 2.5rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+    padding-left: 0;
+    &.inline-block {
+      width: 90%;
+      display: inline-block;
+    }
+    &:focus + label{
+      transform: translateY(-125%);
+      color: grey;
+      font-size: .8em;
+    }
+  }
+  label {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    pointer-events: none;
+    display: inline-block;
+    z-index: 2;
+    top: 7px;
+    left: 0;
+    padding-left: 0;
+    transition: all .3s;
+  }
+}
+
+#map {
+  height: 30rem;
+  width: 100%;
+}
